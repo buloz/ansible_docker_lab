@@ -13,7 +13,7 @@ Pour réaliser cet exercice, vous pouvez vous appuyer sur la [documentation offi
 - [`file`](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/file_module.html) pour la gestion des fichiers et répertoires.
 - [`group`](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/group_module.html) pour la création de groupes.
 - [`user`](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html) pour la création d'utilisateurs.
-
+- [`become`](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_privilege_escalation.html#become-directives) pour les privilèges utilisateur.
 ---
 
 ## Contexte
