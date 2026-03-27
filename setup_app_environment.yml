@@ -1,0 +1,21 @@
+- hosts: node
+  become: yes
+  tasks:
+    - name: Create an app_data dir
+      ansible.builtin.file:
+        path: /app_data
+        state: directory
+    - name: Create app_group group
+      ansible.builtin.group:
+        name: app_group
+        state: present
+    - name: Create app_user user
+      ansible.builtin.user:
+        name: app_user
+        groups: app_group
+    - name: Give ownership of app_data to app_user and app_group
+      ansible.builtin.file:
+        path: /app_data
+        owner: app_user
+        group: app_group
+        mode: '0744'

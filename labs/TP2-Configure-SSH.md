@@ -60,6 +60,6 @@ Vous pouvez modifier la configuration sudo sur les nœuds cibles pour permettre 
 
 - Ajoutez la configuration suivante au fichier /etc/sudoers :
 ```
-echo "app_user ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+echo "ansible_user ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 ```
 Cela permet à app_user d'utiliser sudo sans fournir de mot de passe.
