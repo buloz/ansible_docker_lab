@@ -8,7 +8,6 @@
     - name: Create app_group group
       ansible.builtin.group:
         name: app_group
-        state: present
     - name: Create app_user user
       ansible.builtin.user:
         name: app_user
